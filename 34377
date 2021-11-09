@@ -1,0 +1,8 @@
+
+package assignment3_1;
+public class Rock implements Tossable{
+    @Override
+    public void toss() {
+        System.out.println("toss method has been implemented by Rock class");
+    }
+}

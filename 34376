@@ -1,0 +1,17 @@
+
+package assignment3_1;
+public class FootBall extends Ball{
+
+    public FootBall(String brandName) {
+        super(brandName);
+    }
+
+        @Override
+    public void toss() {
+        System.out.println("toss method has been implemented by FootBall class");
+    }
+    @Override
+    public void bonuce() {
+        System.out.println("bonuce method hase been overrided by FootBall class");
+    }
+}

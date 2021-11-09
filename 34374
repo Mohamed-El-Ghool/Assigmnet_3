@@ -1,0 +1,19 @@
+
+package assignment3_1;
+public class Ball implements Tossable{
+    @Override
+    public void toss() {
+        System.out.println("toss method has been implemented by Ball class");
+    }
+    private String brandName;
+    public Ball(String brandName) {
+        this.brandName = brandName;
+    }
+    public String getBrandName(){
+        return brandName;
+    }
+    public void bonuce(){
+        System.out.println("bonuce method hase been called by Ball class");
+    }
+    
+}
