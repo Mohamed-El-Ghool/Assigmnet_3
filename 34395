@@ -1,0 +1,40 @@
+package assignment3_2;
+public class Mammal implements Animal{
+    private final String name;
+    private final double weight;
+    private final double eat_kg;
+    private final String spreeding;
+    private final int legs;
+    private final String favFood ;
+
+    public Mammal(String name, double weight, double eat_kg, String spreeding, int legs, String favFood) {
+        this.name = name;
+        this.weight = weight;
+        this.eat_kg = eat_kg;
+        this.spreeding = spreeding;
+        this.legs = legs;
+        this.favFood = favFood;
+    }
+    
+    @Override
+    public void eat() {
+        System.out.println("Need to eat : "+eat_kg);
+        System.out.println("Favorite food : "+favFood());
+    }
+
+    @Override
+    public void travel() {
+        System.out.println("It travels within : "+spreeding+" area");
+    }
+    public void display(){
+        System.out.println("Name : "+name);
+        System.out.println("Weight : "+weight);
+        System.out.println("It travels within : "+spreeding+" area");
+    }
+    public int legs(){
+        return legs;
+    }
+    public String favFood(){
+        return favFood;
+    }
+}
